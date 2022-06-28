@@ -1,21 +1,43 @@
 body{
-    background-color: rgb(33, 34, 41);
+    background-color: #191d2b;
     color: white;
     padding-top: 100px;
     padding-left: 0px;
     padding-right: 64px;
     margin-left: 0px;
+    padding-bottom: 150px;
 
     -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */    
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
 
+    -khtml-user-select: none;
+    -o-user-select: none;
+     user-select: none;          /* Likely future */    
+
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    
 }
 
 .introSection{
     margin-left: 64px;
-    margin-right: 20px;
+    margin-right: 32px;
+}
+
+.linksSection a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.linksSection a:visited{
+    color: white;
 }
 
 .introductionHeading{
@@ -41,14 +63,13 @@ body{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-
 }
 
 .rippleLogoButton{
 
     border: 1.5px;
     border-radius: 100px;
-    border-color: rgb(0, 255, 0);
+    border-color: #27ae60;
     border-style: solid;
     margin-bottom: 8px;
     display: inline-block;
@@ -63,7 +84,7 @@ body{
 #buttonSideLogo{
 
     aspect-ratio: 1/1;
-    height: 43px;
+    height: 52px;
     vertical-align: middle;
     margin-left: 18px;
 
@@ -87,30 +108,27 @@ body{
     align-content: space-around;
     justify-content: center;
     align-items: flex-end;
-    margin-right: 26px;
+    margin-right: 34px;
 
 }
 
 .navBarBtn{
 
     border-radius: 200px;
-    aspect-ratio: 1/1;
-    padding: 10px;
-    background-color: rgb(91, 92, 93);
+    padding: 15px 16px;
+    background-color: #454e56;
     margin: 0px;
-    margin: 12px 8px;
+    margin: 12px 6px;
     align-items: center;
-    box-shadow: 0px 1px 12px 6px rgb(0 0 0 / 8%), -1px 1px 20px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0px 1px 12px 6px rgb(0 0 0 / 2%), -1px 1px 20px 0 rgb(0 0 0 / 4%);
 }
 
-.navBarBtn img:active{
-
-    height: 26px;
-    
+.navBarBtn:active{
+    padding: 10px 12px;
 }
 
 .navBarBtn img {
-    height: 33px;
+    height: 26px;
     vertical-align: middle;
 }
 
@@ -120,7 +138,7 @@ body{
 
         width: 100%;
         height: auto;
-        background-color: rgb(71, 72, 73);
+        background-color: #2a2e35;
         display: flexbox;
         flex-direction: row;
         align-items: center;
@@ -129,11 +147,14 @@ body{
     }
 
     .navBarBtn{
-        background-color: unset;
+        background-color: #454e56;
+
     }
 
     .introSection{
+        margin-left: 64px;
         margin-right: 0px;
     }
+
     
 }
