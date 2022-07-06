@@ -42,8 +42,8 @@ body{
     
     .mainContainer{
         display: flex;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding-left: 130px;
+        padding-right: 130px;
 
     }
 
@@ -59,6 +59,14 @@ body{
         padding-right: 64px;
     }
 
+}
+
+@media screen and (min-width: 600px){
+    
+    .mainContainer{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -111,12 +119,14 @@ body{
     margin: 4px;
 }
 
-@media screen and  (max-width: 497px) {
+@media screen and  (max-width: 464px) {
     
     .aboutMeBg{
         top: -116px;
         line-height: 90px;
     }
+
+
 }
 
 
@@ -125,6 +135,11 @@ body{
     .aboutMeBg{
         top: -108px;
         line-height: 90px;
+        margin-right: 32px;
+    }
+
+    .introductionHeading{
+        margin-right: 32px;
     }
     
     .aboutMeHeaderDesign{
@@ -139,10 +154,15 @@ body{
          top: -102px;
          line-height: 80px;
          margin-left: -10px;
+         margin-right: 32px;
     }
     
     .aboutMeHeaderDesign{
         font-size:26px
+    }
+
+    .introductionHeading{
+        margin-right: 32px;
     }
     
   
