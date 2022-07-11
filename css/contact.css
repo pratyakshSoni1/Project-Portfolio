@@ -1,0 +1,20 @@
+.basicIntro{
+
+    padding: 18px 32px;
+    background-color: #454e56;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 18px;
+
+}
+
+#contactSectionHeadings{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#contactSectionAnswers{
+    font-size: 12px;
+    white-space: wrap;
+}
