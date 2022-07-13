@@ -1,20 +1,25 @@
 .basicIntro{
 
+    border-image: linear-gradient(to right,blue, purple);
+    border-image-slice: 3;
     padding: 18px 32px;
     background-color: #454e56;
+    border-image-repeat: stretch;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border-radius: 18px;
+    border-style: solid;
+    border-width: 0.3rem;
 
 }
 
 #contactSectionHeadings{
-    font-size: 12px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 #contactSectionAnswers{
-    font-size: 12px;
+    font-size: 1.3rem;
     white-space: wrap;
 }
