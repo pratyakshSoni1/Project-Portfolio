@@ -25,13 +25,10 @@
     <script>
             
         var projectsSection = document.getElementsByClassName("mainContainer")
-         var projectCardTemplate = `
-                <div class="projectCard">
-
+         var projectCardTemplate = `<div class="projectCard">
                     <div id="projectTitle">{%PROJECT_TITLE%}</div>
                     <div id="projectDescription">{%PROJECT_DESCRIPTION%}</div>
                     <button id="projectLinkButton" onclick="window.location.href='{%PROJECT_LINK%}';">Source Code</button>
-
                 </div>`
         
         fetch("../data/projects.json")
