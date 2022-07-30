@@ -4,8 +4,31 @@
         "title": "Collapsing Toolbar with hint changing Searchbar",
         "description": "This mini Android project implements the basic Collapsing Toolbar and hint changing searchbar using MotionLayout & is made Using #JetpackCompose ",
         "link": "https://github.com/smartphonecodes1/CollapsingToolbar"
-    }
-    
-]
+    },
 
+    {
+        "title": "Analog Clock using Jetpack Compose with Canvas",
+        "description": "This is a very simple Analog clock made using Canvas and Android Jetpack Compose ",
+        "link": "https://github.com/smartphonecodes1/Canvas-custom-Analog-Clock"
+    },
+
+    {
+        "title": "Sassy , Lipstick tryout app",
+        "description": "Basic Lipstick tryout app that plays with image blend modes to apply different colours or lipstick on Model's face",
+        "link": "https://github.com/smartphonecodes1/Sassy"
+    },
+
+    {
+        "title": "Cupcake Shop App",
+        "description": "An basic shopping uses Navigation and RecyclerView with Viewmodel and restores data when phone's state changes like rotation ",
+        "link": "https://github.com/smartphonecodes1/CupcakeShop"
+    },
+
+    {
+        "title": "Calculator App without using calculation library",
+        "description": "It is a kotlin made modern ui simple calculator , well i made this without using any external library , i used to manipulate strings and calculate the result . ",
+        "link": "https://github.com/smartphonecodes1/Calculator-modern-ui"
+    }
+
+    ]
 }
