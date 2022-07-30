@@ -30,20 +30,6 @@
 }
 
 
-@media screen and (min-width: 600px) {
-
-    .aboutMeHeaderDesign{
-        margin-right: 0rem;
-        margin-left: 4rem;
-    }
-
-    .backgroundHeading{
-        bottom: 4.5rem;
-    }
-    
-}
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -53,53 +39,20 @@
     }
 
     .backgroundHeading{
-        bottom: 4.5rem;
+        bottom: 3.5rem;
     }
     
 }
 
-
-@media screen and  (max-width: 475px) {
+@media screen and  (max-width: 430px) {
     
     .backgroundHeading{
-        top: -8rem;
-        line-height: 6.3rem;    
-        margin-right: 4rem;
-        margin-left: 1rem;
-    }
 
-    .introductionHeading{
-        margin-left: 2rem;
-    }
-
-
-}
-
-
-
-@media screen and  (max-width: 360px) {
-    
-    .backgroundHeading{
-        top: -8rem;
-        line-height: 6.2rem;
-        /* margin-right: 32rem; */
-    }
-
-      
-    .aboutMeHeaderDesign{
-        margin-right: 0rem;
-        margin-left: 4rem;
-    }
-}
-
-
-@media screen and  (max-width: 360px) {
-    
-    .backgroundHeading{
-         top: -7.5rem;
-         line-height: 6rem;
+         font-size: 3rem;
+         letter-spacing: 0px;
          margin-left: -1rem;
          margin-right: 2rem;
+         bottom: 3.3rem;
     }
 
     
@@ -110,9 +63,71 @@
 
     
     .aboutMeHeaderDesign{
-        font-size:1.5rem
+        font-size:1.5rem;
+        margin-right: 0rem;
+        margin-left: 4rem;
     }    
 
 }
+
+@media screen and (max-width: 325px){
+        
+    .backgroundHeading{
+
+        font-size: 2rem;
+        letter-spacing: 0px;
+        margin-left: -1rem;
+        margin-right: 2rem;
+        visibility: collapse;
+   }
+
+   
+   .introductionHeading{
+       margin-right: 3rem;
+       margin-left: 0px;
+   }
+
+   
+   .aboutMeHeaderDesign{
+       font-size:1.2rem;
+       margin-right: 0rem;
+       margin-left: 4rem;
+   }    
+
+}
+
+
+
+@media screen and  (min-width: 430px) {
+    
+    .backgroundHeading{
+
+        margin-right: 4rem;
+        margin-left: 1rem;
+        font-size: 3.4rem;
+        letter-spacing: 0px;
+    }
+
+    .introductionHeading{
+        margin-left: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .aboutMeHeaderDesign{
+        margin-right: 0rem;
+        margin-left: 4rem;
+    }
+
+    .backgroundHeading{
+        bottom: 4.5rem;    
+        font-size: 4.5rem;
+    }
+    
+}
+
 
 

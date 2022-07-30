@@ -17,12 +17,18 @@
     </section>
 
     <div class="mainContainer">
+        
+        <section class="projectsSection" id="projectSectionLeft"></section>
+
+        <section class="projectsSection"  id="projectSectionRight"></section>
 
     </div>          
 
     <script>
             
-         var projectsSection = document.getElementsByClassName("mainContainer")
+         var projectsSectionLeft = document.getElementById("projectSectionLeft")
+         var projectsSectionRight = document.getElementById("projectSectionRight")
+
          var projectCardTemplate = `<div class="projectCard">
                     <div id="projectTitle">{%PROJECT_TITLE%}</div>
                     <div id="projectDescription">{%PROJECT_DESCRIPTION%}</div>
@@ -35,13 +41,19 @@
             })
             .then(jsondata => {
 
+                let indexCount = 0
                 jsondata.Projects.forEach(element => {
-                    
+
                     let tempCard = projectCardTemplate.replace("{%PROJECT_TITLE%}",element.title.toString())
                     tempCard = tempCard.replace("{%PROJECT_DESCRIPTION%}",element.description.toString())
                     tempCard = tempCard.replace("{%PROJECT_LINK%}",element.link.toString())
-
-                    projectsSection[0].innerHTML += tempCard.toString()
+                    
+                    if(indexCount%2 == 0){
+                        projectsSectionLeft.innerHTML += tempCard.toString()
+                    }else{
+                        projectsSectionRight.innerHTML += tempCard.toString()
+                    }
+                    i++
                     
                 });
 

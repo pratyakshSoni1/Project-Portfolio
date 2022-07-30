@@ -1,3 +1,27 @@
+.projectsSection{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .projectsSection{
+        width: 50%;
+    }
+    
+    #projectSectionRight{
+        padding-right: 8px;
+    }
+    
+    #projectSectionLeft{
+        padding-right: 8px;
+    }
+
+}
+
+
+
 .projectCard {
     background-color: #454e56;
     padding: 1rem 1.5rem;
