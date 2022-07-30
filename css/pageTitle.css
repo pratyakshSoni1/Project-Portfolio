@@ -40,6 +40,7 @@
 
     .backgroundHeading{
         bottom: 3.5rem;
+        visibility: collapse;
     }
     
 }
