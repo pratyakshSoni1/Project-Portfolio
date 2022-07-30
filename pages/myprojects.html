@@ -19,41 +19,41 @@
     <div class="mainContainer">
 
 
-        <script>
-            
-            var projectsSection = document.querySelector("mainContainer")
-             var projectCardTemplate = `
-                    <div class="projectCard">
-
-                        <div id="projectTitle">{%PROJECT_TITLE%}</div>
-                        <div id="projectDescription">{%PROJECT_DESCRIPTION%}</div>
-                        <button id="projectLinkButton" onclick="window.location.href='{%PROJECT_LINK%}';">Source Code</button>
-
-                    </div>`
-            
-            fetch("../data/projects.json")
-                .then(response => {
-                return response.json();
-                })
-                .then(jsondata => {
-
-                    jsondata.Projects.forEach(element => {
-                        
-                        let tempCard = projectCardTemplate.replace("{%PROJECT_TITLE%}",element.title.toString())
-                        tempCard = tempCard.replace("{%PROJECT_DESCRIPTION%}",element.description.toString())
-                        tempCard = tempCard.replace("{%PROJECT_LINK%}",element.link.toString())
-
-                        projectsSection.innerHTML+= tempCard
-                        
-                    });
-
-                });
-    
-        </script>
-
-        
+             
 
     </div>
+
+    <script>
+            
+        var projectsSection = document.querySelector("mainContainer")
+         var projectCardTemplate = `
+                <div class="projectCard">
+
+                    <div id="projectTitle">{%PROJECT_TITLE%}</div>
+                    <div id="projectDescription">{%PROJECT_DESCRIPTION%}</div>
+                    <button id="projectLinkButton" onclick="window.location.href='{%PROJECT_LINK%}';">Source Code</button>
+
+                </div>`
+        
+        fetch("../data/projects.json")
+            .then(response => {
+            return response.json();
+            })
+            .then(jsondata => {
+
+                jsondata.Projects.forEach(element => {
+                    
+                    let tempCard = projectCardTemplate.replace("{%PROJECT_TITLE%}",element.title.toString())
+                    tempCard = tempCard.replace("{%PROJECT_DESCRIPTION%}",element.description.toString())
+                    tempCard = tempCard.replace("{%PROJECT_LINK%}",element.link.toString())
+
+                    projectsSection.innerHTML+= tempCard
+                    
+                });
+
+            });
+
+    </script>
 
 </body>
 </html>
