@@ -1,8 +1,8 @@
 {
     "Projects": [
     {
-        "title": "My First Project",
-        "description": "This project is made to test the js generation ?",
+        "title": "Collapsing Toolbar with hint changing Searchbar",
+        "description": "This project is made Using jetpackCompose and Kotlin ",
         "link": "https://github.com/smartphonecodes1/"
     },
     

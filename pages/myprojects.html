@@ -18,13 +18,11 @@
 
     <div class="mainContainer">
 
-       <div>TEST PHASE</div>            
-
-    </div>
+    </div>          
 
     <script>
             
-        var projectsSection = document.getElementsByClassName("mainContainer")
+         var projectsSection = document.getElementsByClassName("mainContainer")
          var projectCardTemplate = `<div class="projectCard">
                     <div id="projectTitle">{%PROJECT_TITLE%}</div>
                     <div id="projectDescription">{%PROJECT_DESCRIPTION%}</div>
@@ -43,7 +41,7 @@
                     tempCard = tempCard.replace("{%PROJECT_DESCRIPTION%}",element.description.toString())
                     tempCard = tempCard.replace("{%PROJECT_LINK%}",element.link.toString())
 
-                    projectsSection.innerHTML += tempCard.toString()
+                    projectsSection[0].innerHTML += tempCard.toString()
                     
                 });
 
